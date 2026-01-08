@@ -1,0 +1,258 @@
+/* 🌟 Full Page Layout
+.about-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+*/
+
+/* 🎥 Background Video
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+*/
+
+/* 🎇 Navigation Bar
+.nav-bar {
+    position: absolute;
+    top: 30px;
+    display: flex;
+    gap: 30px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 12px 24px;
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+*/
+
+/* 🔗 Navigation Links
+.nav-link {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s;
+}
+
+.nav-link:hover {
+    color: #00e5ff;
+    text-shadow: 0 0 5px #00e5ff;
+    transform: scale(1.1);
+}
+*/
+
+/* ✨ About Title
+.about-title {
+    font-size: 50px;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(0, 230, 255, 0.7);
+    margin-bottom: 20px;
+    z-index: 5;
+}
+*/
+
+/* 📝 About Description Text
+.about-text {
+    font-size: 20px;
+    color: #cfd8dc;
+    text-shadow: 0 0 5px rgba(0, 230, 255, 0.5);
+    max-width: 800px;
+    line-height: 1.6;
+    z-index: 5;
+}
+*/
+
+/* 🌟 Full Page Layout */
+.about-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /* Use min-height instead of fixed height */
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #050a12 0%, #0a1a2e 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px 40px; /* Enough space top and bottom */
+}
+
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.2;
+}
+
+/* Navbar */
+.nav-bar {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    gap: 30px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 12px 24px;
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s;
+}
+
+.nav-link:hover {
+    color: #00e5ff;
+    text-shadow: 0 0 5px #00e5ff;
+    transform: scale(1.1);
+}
+
+/* Main content */
+.about-content {
+    position: relative;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 900px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 15px rgba(0, 230, 255, 0.2);
+}
+
+.about-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(0, 230, 255, 0.7);
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 18px;
+    color: #cfd8dc;
+    text-shadow: 0 0 5px rgba(0, 230, 255, 0.5);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.section-heading {
+    font-size: 28px;
+    color: #00e5ff;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(0, 230, 255, 0.5);
+}
+
+.about-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    color: #cfd8dc;
+}
+
+/* Social media icons */
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-links a {
+    font-size: 28px;
+    color: #ffffff;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.social-links a:hover {
+    color: #00e5ff;
+    transform: scale(1.2);
+}
+
+.about-subtitle {
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 0 0 10px #00e5ff;
+  }
+  
+  .team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 10px;
+  }
+  
+  .team-card {
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid #00e5ff;
+    border-radius: 15px;
+    padding: 20px 30px;
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(0, 230, 255, 0.8);
+    box-shadow: 0 0 20px rgba(0, 230, 255, 0.4);
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(5px);
+  }
+  
+  .team-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 230, 255, 0.7);
+  }
+
+.background-video {
+    position: absolute;
+    top: 0 !important;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 6; /* Push it behind everything */
+    opacity: 0.3; /* Adjust for desired visibility */
+}
+
+.team-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 5;
+    box-shadow: 0 0 25px rgba(0, 230, 255, 0.6);
+    transition: transform 0.3s ease;
+  }
+  
+  .team-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px rgba(0, 230, 255, 0.9);
+  }
+  
+

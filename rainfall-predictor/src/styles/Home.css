@@ -1,0 +1,83 @@
+/* 🧵 Fullscreen Canvas with Custom Dark Background */
+.home-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+
+  
+  /* 🧠 Navigation Bar */
+  .nav-bar {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 12px 30px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
+    backdrop-filter: blur(12px);
+    z-index: 10;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #00e5ff;
+    text-shadow: 0 0 8px #00e5ff;
+  }
+  
+  /* 🪐 Hero Content */
+  .hero {
+    position: absolute;
+    top: 30%; /* Raised higher */
+    left: 50%;
+    transform: translate(-50%, -30%);
+    text-align: center;
+    z-index: 5;
+    color: white;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    text-shadow: 0 0 20px rgba(0, 229, 255, 0.8);
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    margin-top: 12px;
+    color: #b2ebf2;
+    text-shadow: 0 0 8px rgba(0, 229, 255, 0.6);
+  }
+  
+  /* 🧊 Canvas sits behind everything */
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  /* 📱 Mobile Adjustments */
+  @media (max-width: 768px) {
+    .hero {
+      top: 25%;
+      transform: translate(-50%, -25%);
+    }
+  }
+  
+
+  
