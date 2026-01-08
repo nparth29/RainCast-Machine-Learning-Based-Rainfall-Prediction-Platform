@@ -30,6 +30,24 @@
 
 2. **Backend (start server)**
    install the required dependencies
+   Before running the backend, you must create your **OpenWeatherMap API key** and add it to the backend files.
+
+   #### Create OpenWeatherMap API key
+   1. Go to: https://openweathermap.org/
+   2. Sign up or log in
+   3. Navigate to **My API Keys**
+   4. Generate a new API key
+
+   #### Add API key to backend files
+   Open the following files and place your API key where indicated:
+
+   - `weather_api.py`
+   - `data_collector.py`
+
+   Example:
+   ```python
+   API_KEY = "YOUR_OPENWEATHERMAP_API_KEY"
+   ```
    then run : 
    ```bash
    python app.py
@@ -37,7 +55,7 @@
    The API runs at http://127.0.0.1:5000.
 
    ---
-3. **Frontend**
+4. **Frontend**
    in new terminal :
    ```bash
    cd rainfall-predictor
